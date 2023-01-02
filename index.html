@@ -1,34 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Ping coming soon page</title>
+  </head>
+  <body>
+    <main>
+      <img class="logo" src="images/logo.svg" alt="Ping Logo" />
+      <h1 class="main-heading">We are launching <span>soon!</span></h1>
+      <p class="main-paragraph">Subscribe and get notified</p>
+      <form action="#">
+        <input
+          type="email"
+          class="input-email"
+          placeholder="Your email adress..."
+        />
+        <input type="submit" class="input-submit" value="Notify Me" />
+      </form>
+      <p class="error"></p>
+      <img
+        class="img-dashboard"
+        src="images/illustration-dashboard.png"
+        alt=""
+      />
+    </main>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Ping coming soon page</title>
+    <section>
+      <div class="socials-wrapper">
+        <a href="#" class="social-link">
+          <ion-icon class="social-icon" name="logo-facebook"></ion-icon>
+        </a>
+        <a href="#" class="social-link">
+          <ion-icon class="social-icon" name="logo-twitter"></ion-icon>
+        </a>
+        <a href="#" class="social-link">
+          <ion-icon class="social-icon" name="logo-instagram"></ion-icon>
+        </a>
+      </div>
+    </section>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <footer>
+      <p>&copy; Copyright Ping. All rights reserved.</p>
+    </footer>
 
-  We are launching soon!
+    <!-- input validation -->
+    <script src="script.js"></script>
 
-  Subscribe and get notified
-
-  Notify Me
-
-  &copy; Copyright Ping. All rights reserved.
-
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
-</body>
+    <!-- icons script -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+  </body>
 </html>
