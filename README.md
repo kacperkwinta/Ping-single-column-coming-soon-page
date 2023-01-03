@@ -10,5 +10,5 @@
 
 ### Links 🌐
 
-- Live Site URL 🔴: [click!](https://kacperkwinta.github.io/Interactive-rating-component/)
+- Live Site URL 🔴: [click!](https://kacperkwinta.github.io/Ping-single-column-coming-soon-page/)
 - My Frontend Mentor profile 👦: [click!](https://www.frontendmentor.io/profile/kacperkwinta)
