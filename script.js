@@ -1,3 +1,5 @@
+"use strict";
+
 console.log(`hi mom`);
 
 /*
@@ -10,27 +12,23 @@ The email address is not formatted correctly
 const inputEmail = document.querySelector(".input-email");
 const inputSubmit = document.querySelector(".input-submit");
 const errorParagraph = document.querySelector(".error");
-const emailStr = inputEmail.value;
-
-// check email
-const checkEmail = function (emailStr) {
-  var re = /\S+@\S+\.\S+/;
-  return re.test(email);
-};
 
 inputSubmit.addEventListener("click", function () {
-  if (inputEmail.value === "") {
-    setTimeout(() => {
-      errorParagraph.style.color = "hsl(354, 100%, 66%)";
-      errorParagraph.textContent =
-        "Whoops 🙄 please write your email correctly...";
-    }, 100);
-  } else {
+  if (inputEmail.value.match(/(.+)@(.+){2,}\.(.+){2,}/)) {
     setTimeout(() => {
       inputEmail.value = "";
+      inputEmail.style.border = "1px solid hsl(223, 87%, 63%)";
+
       errorParagraph.style.color = "hsl(223, 87%, 63%)";
       errorParagraph.textContent =
         "Thank you for subscription! We are in touch 😉";
+    }, 100);
+  } else {
+    setTimeout(() => {
+      inputEmail.style.border = "1px solid hsl(354, 100%, 66%)";
+      errorParagraph.style.color = "hsl(354, 100%, 66%)";
+      errorParagraph.textContent =
+        "Whoops 🙄 please write your email correctly...";
     }, 100);
   }
 });

@@ -17,7 +17,7 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 55%;
   font-family: "Libre Franklin", sans-serif;
 }
 
@@ -109,6 +109,7 @@ input {
   margin-bottom: 6.4rem;
   color: var(--light-red);
   font-size: 1.5rem;
+  font-style: italic;
 }
 
 .img-dashboard {
